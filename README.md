@@ -1,4 +1,7 @@
 # parsec-space
+READ HOW TO RUN .docx
+
+
 It is a web app that has an AJAX enabled search of 3500+ exoplanets and a user login portal that has features like online quiz etc. 
 and admin portal with some admin capabilities.
 To run the project locally on your computer one need to have XAMPP-to create a server and to create database link.
