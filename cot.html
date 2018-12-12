@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Parsec cot</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+
+	<script>
+	function showResult(str) {
+	if (str.length==0) { 
+		document.getElementById("livesearch").innerHTML="";
+		return;
+	}
+	if (window.XMLHttpRequest) {
+		xmlhttp=new XMLHttpRequest();
+	} 
+	else {
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+    }
+	}
+	xmlhttp.open("GET","livesearch.php?q="+str,true);
+	xmlhttp.send();
+	}
+	</script>
+</head>
+
+
+<body>
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                	Parsec
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a>
+                    <li><a href="login.html">LOG IN</a></li>
+					<li><a href="signup.html">SIGN UP</a></li>
+					<li><a href="admin.html">ADMIN</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+	<!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>parsec</h1>
+                <p>A Space Odyssey</p>
+				<br>
+				<form action="#">
+				<input type="text" size="30" style="padding:10px 20px; border-radius:15px;border:none;width:500px;color:black;" placeholder="Type in the name of exoplanet to be searched" onkeyup="showResult(this.value)">
+				<br><br>
+				<div id="livesearch"><b></b></div>
+				</form>
+				<br><br>
+				<p>Scroll down to see some technical terms...</p>
+                <!--a href="" class="btn btn-primary btn-lg">SEARCH</a>
+				<br><br-->
+            </div>
+        </div>
+    </header>
+	<div style="background-color:powderblue;">
+	<center>
+	<h1 style="color:green;padding:15px 0px 0px 0px;">
+	SOME TECHNICAL TERMS
+	</h1>
+	<hr>
+	</center>
+ <div class="content less-margin-3" style="margin:10px 75px;">
+        <p>I'm sure you guys know most of them, We're trying to help you learn. Let's begin from Basics. </p>
+<p>First, we'll learn about space and other parameters which helps us find the exoplanet. Post this, we can bind all the collated information in an app.</p>
+<p align="justify"><b><a href="https://www.space.com/17738-exoplanets.html" target="blank">Exoplanet:</a></b> Exoplanets are planets that are outside our solar system. However, most exoplanets are not tightly bound to stars and hence they are actually wandering through space or loosely orbiting between stars.</p>
+<p align="justify"><b><a href="https://perfectastronomy.com/luminosity-flux/" target="blank">Flux: </a></b>Flux measures the intensity of light that is emitted from a source. However, the flux of an astronomical source depends on the light intensity of the object and its distance from Earth.</p>
+<p align="justify"><b><a href="https://en.wikipedia.org/wiki/Star_system" target="blank">Star system:</a></b> A star system is a  small number of stars that revolve around each other due to mutual gravitational attraction.</p>
+<p align="justify"><b><a href="https://en.wikipedia.org/wiki/Right_ascension" target="blank">Right Ascension (RA)</a></b> and <a href="https://en.wikipedia.org/wiki/Declination" target="blank"><b>declination (DEC):</b></a> RA and DEC are to the sky what longitude and latitude are to the surface of the Earth. RA corresponds to East/West directions (like longitude) while DEC measures North/South directions (like latitude).</p>
+<p align="justify"><b><a href="https://en.wiktionary.org/wiki/periastron" target="blank">Periastron: </a></b>The point of the orbit of a celestial body that is closest to the star around which the body is orbiting.</p>
+<p align="justify"><b><a href="https://en.wikipedia.org/wiki/Orbital_eccentricity" target="blank">Eccentricity:</a></b> The orbital eccentricity of an astronomical object is a parameter that determines the amount by which its orbit around another body deviates from a perfect circle. A value of 0 is a circular orbit, values between 0 and 1 form an elliptic orbit, 1 is a parabolic escape orbit, and greater than 1 is a hyperbola.</p>
+<p align="justify"><b><a href="https://en.wikipedia.org/wiki/Mean_anomaly" target="blank">Mean anomaly:</a></b> In celestial mechanics, the mean anomaly is an angle used to calculate the position of a body in an elliptical orbit in the classical two-body problem. It is the angular distance from the pericenter which a fictitious body would have if it moved in a circular orbit, with constant speed, in the same orbital period as the actual body in its elliptical orbit.</p>
+<p align="justify"><b><a href="http://astronomy.swin.edu.au/cosmos/A/Ascending+Node" target="blank">Ascending node:</a></b> The longitude of the ascending node (☊ or Ω) is one of the orbital elements that is used to specify the orbit of an object in space. It is the angle from a reference direction, called the origin of longitude, to the direction of the ascending node, which is measured in a reference plane.</p>
+<p align="justify"><b><a href="http://astronomy.swin.edu.au/cosmos/A/Ascending+Node" target="blank">Impact parameter:</a></b> The impact parameter is defined as the perpendicular distance between the path of a projectile and the center of a potential field U(r) that is created by an object that a projectile is approaching.</p>
+<p align="justify"><b><a href="https://en.wikipedia.org/wiki/Billion_years" target="blank">Age Gy:</a></b> The age of a planet in billion years.</p>
+</div>
+<hr>	
+<br>
+<div>
+</body>
+
+</html>
