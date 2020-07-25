@@ -1,12 +1,20 @@
 # parsec-space
-READ HOW TO RUN .docx
+PARSEC(Nilesh Tanwar)
 
+Parsec-the space odyssey
 
-It is a web app that has an AJAX enabled search of 3500+ exoplanets and a user login portal that has features like online quiz etc. 
-and admin portal with some admin capabilities.
-To run the project locally on your computer one need to have XAMPP-to create a server and to create database link.
-Then import the sql file "space.sql" by going to "localhost/phpmyadmin" and the click on import tab.
-Then one must copy all these file inside the "htdocs" folder which you will find within xampp folder.I prefer you to copy all the repositry 
-files inside a new folder "parsec".
-After this just go to your web browser and type "localhost/parsec/cot.html" but before that make sure to open the localserver and mysql 
-database connection.
+Brief : The project helps space explorers to search details of exoplanets in an interactive way and it also has user login with online quiz like feature.
+Pre-requisite: 
+1.	(Apache-Tomcat + Mysql ) or xamp
+Steps : 
+1.	Start Apache , Tomcat and MySql from xampp control panel.
+2.	Save the folder “parsec” with all the files in the repository or extracted zip file in c:\xampp\htdocs.
+3.	Import the “space.sql” file (present in the repository)  from “localhost/phpmyadmin” page in browser.
+4.	Now to access the main content page type in browser-“localhost\parsec\cot.html”.
+5.	Navigate through the pages.
+
+Important:
+Admin:  Username : parsec
+	    Password : pass
+You can register more user from signup page.
+Hope it explains well.
