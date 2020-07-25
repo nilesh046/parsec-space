@@ -4,8 +4,9 @@ PARSEC(Nilesh Tanwar)
 Parsec-the space odyssey
 
 Brief : The project helps space explorers to search details of exoplanets in an interactive way and it also has user login with online quiz like feature.
-Pre-requisite: 
-1.	(Apache-Tomcat + Mysql ) or xamp
+
+Pre-requisite: (Apache-Tomcat + Mysql ) or xamp
+
 Steps : 
 1.	Start Apache , Tomcat and MySql from xampp control panel.
 2.	Save the folder “parsec” with all the files in the repository or extracted zip file in c:\xampp\htdocs.
@@ -14,7 +15,10 @@ Steps :
 5.	Navigate through the pages.
 
 Important:
+
 Admin:  Username : parsec
-	    Password : pass
+	Password : pass
+	
 You can register more user from signup page.
+
 Hope it explains well.
